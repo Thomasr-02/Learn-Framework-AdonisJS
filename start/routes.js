@@ -13,7 +13,15 @@
 |
 */
 
+
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+Route.on('/').render('home')
+Route.on('/tasks').render('tasks')
+Route.on('/add').render('add')
+// Route.get('/test', ()=> 'Hello World')
+// Route.get('/test/:id', ({params})=> {
+//     return `Teste seu id ${params.id}`
+// })
+// Route.get('/task','TaskController.index')
