@@ -18,10 +18,5 @@
 const Route = use('Route')
 
 Route.on('/').render('home')
-Route.on('/tasks').render('tasks')
+Route.get('/tasks', 'TaskController.index')
 Route.on('/add').render('add')
-// Route.get('/test', ()=> 'Hello World')
-// Route.get('/test/:id', ({params})=> {
-//     return `Teste seu id ${params.id}`
-// })
-// Route.get('/task','TaskController.index')
